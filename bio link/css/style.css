@@ -1,0 +1,165 @@
+/* Importação de Fontes */
+/* Importa fontes "Sedan SC" e "Silkscreen" do Google Fonts */
+@import url(https://fonts.googleapis.com/css2?family=Sedan+SC&family=Silkscreen&display=swap);
+
+/* Estilos das Fontes */
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Estilos das Fontes */
+.sedan-sc-regular {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;  
+} 
+
+/* Reset e Estilos Globais */
+/* Remove margens e preenchimentos padrão, e define o box-sizing como border-box para todos os elementos */
+* {
+    padding: 0%;
+    list-style: none;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+/* Centralização de Elementos */
+/* Centraliza elementos com a classe .position */
+.position {
+    display: block;
+    margin: auto;
+}
+
+/* Estilo de Bordas Arredondadas */
+/* Aplica largura, bordas arredondadas, e transição suave a elementos com a classe .border */
+.border {
+    /* Utilizado em main logo, main a */
+    width: 330px;
+    border-radius: 30px;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+/* Alinhamento de Texto */
+/* Centraliza o texto em elementos com a classe .text-align */
+.text-align {
+    /* Utilizado em section h2, section p, main ul */
+    text-align: center;
+}
+
+/* Layout Flexível */
+/* Aplica flexbox e centraliza conteúdo com a classe .flex */
+.flex {
+    /* Utilizado em section p, footer p */
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos do Corpo */
+/* Define a fonte principal, largura, altura, e fundo com gradiente e imagem */
+body {
+    font-family: "Sedan SC", serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/imagens/fundo-ceu-azul.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilos para logo */
+/* Define tamanho, bordas e espaçamento para a imagem do logo */
+main .logo {
+    width: 180px;
+    border-radius: 90px;
+    padding: 20px;
+}
+
+/* Define margens e cores para títulos */
+section h1 {
+    margin-bottom: 20px;
+    color: #cf40a4;
+    font-size: 30px;
+}
+
+section p {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+/* Define layout flexível e centraliza itens da lista */
+main ul {
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+}
+
+/* Define fonte e tamanho para itens da lista */
+main li {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 20px;
+}
+
+/* Define estilos básicos para links */
+main a {
+    text-decoration: none;
+    background-color: #9a2464;
+    border: 2px solid #9a2464;
+}
+
+/* Muda cor de fundo e texto ao passar o mouse */
+main a:hover {
+    background: #0b1b3c;
+    color: #c04c94;
+}
+
+/* Define espaçamento entre itens da lista */
+main ul li+li {
+    margin-top: 10px;
+}                                                             
+
+/* Define estilo básico para o rodapé */
+footer {
+    background-color: #0b1b3c;
+    text-decoration: none;
+    margin: 270px auto;
+}
+
+/* Define cor e espaçamento para links no rodapé */
+footer a {
+    color: #52d4fc;
+    margin: 0px 5px 0px 5px;
+}
+
+/* Muda a cor do texto ao passar o mouse */
+footer a:hover {
+    color: #9c2567;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    body {
+        background-size: cover;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
